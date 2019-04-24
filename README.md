@@ -5,5 +5,5 @@ To run the build:
 
 ```
 npm install
-npm run buld
+npm run build
 ```
