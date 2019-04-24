@@ -7,3 +7,5 @@ To run the build:
 npm install
 npm run build
 ```
+
+Issue link: https://github.com/linkedin/eyeglass/issues/235
