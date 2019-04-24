@@ -1,0 +1,9 @@
+body {
+    background-color: red;
+}
+
+@if ($theme == 'two') {
+    body {
+        background-color: blue;
+    }
+}
