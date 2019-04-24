@@ -2,7 +2,7 @@ const path = require('path');
 const eyeglass = require('eyeglass');
 
 module.exports = {
-    entry: [ './src/theme.one.scss', './src/theme.two.scss'],
+    entry: [ './src/theme.two.scss', './src/theme.one.scss'],
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
@@ -13,23 +13,23 @@ module.exports = {
                 test: /\.scss$/,
                 use: [
                     {
-						loader: 'file-loader',
-						options: {
-							name: '[name].css',
-						}
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].css',
+                        }
                     },
                     {
                         loader: 'extract-loader'
                     },
                     {
-						loader: 'css-loader?-url'
-					},
+                        loader: 'css-loader?-url'
+                    },
                     {
                         loader: 'sass-loader',
                         options: eyeglass({
                             includePaths: ['node_modules/']
                         })
-					}
+                    }
                 ]
             }
         ]
